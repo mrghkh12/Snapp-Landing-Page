@@ -1,0 +1,25 @@
+
+
+.imgBox-item-feature-about-snapp{
+    display: flex;
+    overflow: hidden;
+    border-radius: 18px;
+    background: #f2f5f8;
+    align-items: center;
+    justify-content: center;
+}
+
+.title-item-feature-about-snapp{
+    font-weight: 700;
+    font-size: 17px;
+    margin: 16px 0;
+    text-align: right;
+    line-height: 1.7;
+    color: #404040; 
+}
+
+.desc-item-feature-about-snapp{
+    font-size: 12px;
+    line-height: 1.7;    
+    color: #404040;
+}
