@@ -1,0 +1,42 @@
+.item-feature-snapp{
+    width: 100%;
+    display: flex;
+    background: #fff;
+    border-radius: 18px;
+    align-items: center;
+    padding: 8px 0;
+    color: #3f3f3f;
+    justify-content: start;
+}
+
+.item-feature-snapp > img{
+    width: 62px;
+    height: 62px;
+    margin: 0 8px;
+}
+
+.item-feature-snapp > img.discount{
+    transform: scale(1.14);
+    transform-origin: right bottom;
+}
+
+.desc-item-features-snapp{
+    display: flex;
+    flex-direction: column;
+    padding: 8px 0;
+    justify-content: center;
+}
+
+.desc-item-features-snapp h3{
+    margin: 4px 0;
+    color: #3f3f3f;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.7;
+}
+
+.desc-item-features-snapp p{
+    font-size: 14px;
+    color: #a3a3a3;
+    line-height: 1.7;
+}

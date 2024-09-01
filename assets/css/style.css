@@ -1,0 +1,485 @@
+@import url(./css-reset.css);
+
+@import url(./slider-style.css);
+
+
+body{
+    font-family: 'iransans', sans-serif;
+}
+
+.header-snapp{
+    width: 100%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    min-height: 96px;
+    padding: 0 11.5%;
+    border-bottom: 1px solid #e5e5e5;
+    z-index: 5;
+    position: sticky;
+    top: 0;
+}
+
+.logo-header-snapp{
+    height: 32px;
+}
+
+.wrapper-menu-header-snapp{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+}
+
+.submenu-header-snapp{
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    background: #fff;
+    top: 32px;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    border: 1px solid #dedede;
+    border-radius: 9px;
+    right: 50%;
+    transform: translateX(50%);
+    padding: 6px;
+    transition: all none;
+    visibility: hidden;
+    z-index: 5;
+}
+
+.item-submenu-header-snapp{
+    padding: 0.5rem 1rem;
+    text-align: right;
+    height: 43px;
+    display: flex;
+    align-items: center;
+}
+
+.item-submenu-header-snapp a:hover{
+    color: #00d170;
+    font-weight: 700;
+    transition: all 0.2s;
+}
+
+.item-menu-header-snapp{
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.item-menu-header-snapp a{
+    color: #3f3f3f;
+    line-height: 1.7;
+    text-decoration: none;
+}
+
+.item-menu-header-snapp > svg{
+    transform: scale(0.6) rotate(90deg);
+    color: #575757;
+    margin-right: 8px;
+    height: 33px;
+}
+
+.item-menu-header-snapp:hover .submenu-header-snapp{
+    height: auto;
+    opacity: 1;
+    transition: all 0.3s;
+    visibility: visible;
+    
+}
+.intro-snapp{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.textBox-intro-snapp{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background: #21aa58;
+    color: #fff;
+}
+
+.imgBox-intro-snapp{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.wrapper-imgBox-intro-snapp {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.wrapper-imgBox-intro-snapp img{
+    max-width: 100%;
+    transform: scaleX(-1.25);
+    height: 100%;
+}
+
+
+.textBox-intro-snapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 32px;
+    padding-right: max(140px,15%)!important;
+    line-height: 1.7;
+    text-align: right;
+}
+
+.title-textBox-intro-snapp{
+    margin-bottom: 16px;
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 700;
+}
+
+.desc-textBox-intro-snapp{
+    font-size: 21px;
+    padding: 16px 0;
+    line-height: 1.7;
+}
+
+.form-textBox-intro-snapp{
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+
+.inputBox-form-textBox-intro-snapp{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1;
+    height: 48px;
+    border-bottom: 1px solid rgb(235, 235, 235);
+    padding-right: 5px;
+}
+
+.inputBox-form-textBox-intro-snapp input#phoneNum_input{
+    height: 100%;
+    background-color: transparent;
+    border: none;
+    flex-grow: 1;
+    outline: none;
+    color: #EBEBEB;
+    line-height: 48px;
+}
+.inputBox-form-textBox-intro-snapp input#phoneNum_input::placeholder{
+    font-family: 'iransans', sans-serif;
+    color: #EBEBEB;
+}
+.inputBox-form-textBox-intro-snapp #input_icon{
+    padding: 0 8px;
+    display: flex;
+    align-items: center;
+}
+.inputBox-form-textBox-intro-snapp #input_icon .dot-icon{
+    display: block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+    background-color: rgb(235, 235, 235);
+    
+
+}
+
+.inputBox-form-textBox-intro-snapp #input_icon > svg{
+    border-radius: 50%;
+    cursor: pointer;
+    fill: rgb(255, 255, 255);
+    background-color: rgb(163, 163, 163);
+    display: none;
+}
+
+.form-textBox-intro-snapp > button{
+    font-family: 'iransans', sans-serif;
+    font-weight: 700;
+    margin-right: 16px;
+    color: #00d16f;
+    border: none;
+    outline: none;
+    background: #fff;
+    width: 25%;
+    height: 40px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.loginBtn-textBox-intro-snapp{
+    margin-top: 32px;
+    width: 50%;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 800;
+    border: 1px solid #fff;
+    border-radius: 6px;
+    text-align: center;
+    height: 48px;
+    line-height: 48px;
+    font-size: 17px;
+    transition: 0.3s;
+}
+.loginBtn-textBox-intro-snapp:hover{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.downloadApp-snapp{
+    padding: 0 max(140px, 15%);
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    min-height: 30vh;
+    justify-content: space-around;
+    text-decoration: none;
+}
+.link-downloadApp-snapp > img{
+    width: 160px;
+}
+
+
+.service-snapp{
+    padding: 0 max(140px,15%) 40px;
+    margin-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #f2f5f8;
+    overflow: hidden;
+}
+
+.title-service-snapp{
+    padding: 40px 0;
+    font-size: 36px;
+    line-height: 52px;
+    font-weight: 700;
+    color: #404040;
+}
+
+.container-service-snapp{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+service-item{
+    display: flex;
+    width: 29% ;
+    max-width: 321px;
+    margin: 16px;
+}
+
+
+.slider-snapp{
+    direction: ltr;
+    padding: 40px max(140px,15%);
+    margin: 40px 0;
+}
+
+
+.about-snapp{
+    min-height: 700px;
+    display: flex;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    position: relative;
+    justify-content: center;
+}
+
+.imgBox-about-snapp,
+.textBox-about-snapp{
+    height: 50vh;
+    min-height: 450px;
+    width: 50%;
+    max-width: 50%;
+}
+
+.imgBox-about-snapp img{
+    width: 100%;
+    height: 100%;
+}
+
+.textBox-about-snapp{
+    padding-left: max(140px, 15%);
+    text-align: right;
+    display: flex;
+    padding-top: 16px;
+    padding-right: 40px;
+    flex-direction: column;
+}
+
+.textBox-about-snapp > h3{
+    font-size: 22px;
+    margin-bottom: 8px;
+    margin-top: 16px;
+    font-weight: 700;
+    color: #404040;
+    line-height: 1.7;
+}
+
+.textBox-about-snapp > p{
+    font-size: 14px;
+    margin: 8px 0;
+    line-height: 1.7;
+    color: #404040;
+}
+
+.feature-wrapper-about-snapp{
+    padding: 0 max(140px, 15%);
+    margin-top: 8px;
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    margin: auto;
+    bottom: 0;
+}
+
+.registr-driver-snapp{
+    display: flex;
+    text-align: center;
+    background: #f2f5f8;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px max(140px, 15%);
+    margin-top: 40px;
+}
+
+.title-registr-driver-snapp{
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 52px;
+    color: #404040;
+}
+
+.desc-registr-driver-snapp{
+    font-size: 20px;
+    padding: 16px 0;
+    font-weight: 500;
+    line-height: 1.7;
+}
+
+.btn-registr-driver-snapp{
+    font-size: 17px;
+    margin: 16px 0;
+    padding: 15.5px 32px;
+    font-weight: 700;
+    transition: all 0.3s;
+    line-height: 1;
+    border-radius: 6px;
+    background: #00d170;
+    color: #fff;
+    vertical-align: middle;
+}
+
+.btn-registr-driver-snapp:hover{
+    background: rgb(0, 219, 117);
+}
+
+.videoBox-registr-driver-snapp{
+    align-self: stretch;
+    overflow: hidden;
+    margin: 40px 0;
+    line-height: 1.7;
+}
+
+.videoBox-registr-driver-snapp video{
+    width: 100%;
+    border-radius: 9px;
+}
+
+.container-benefits-item{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    line-height: 1.7;
+}
+
+.footer-snapp{
+    min-height: 100px;
+    padding: 40px 11.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.navMenu-footer-snapp{
+    max-width: 1000px;
+    display: flex;
+    padding-right: 8px;
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.7;
+}
+
+.navMenu-footer-snapp a{
+    margin: 8px 16px;
+    margin-right: 0;
+    color: #404040;
+}
+
+.links-footer-snapp{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.social-link-footer-snapp{
+    display: flex;
+    margin: 16px 0;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.social-link-footer-snapp a{
+    display: flex;
+}
+
+.license-link-footer-snapp{
+    display: flex;
+    padding: 0 4px;
+    min-height: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 6px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(34, 34, 34, .26666666666666666);
+    -webkit-border-radius: 6px;
+}
+@font-face {
+    font-family: 'iransans';
+    src: url(../fonts/fa-Iran-sans-web-light.woff2);
+    font-weight: normal;
+    font-display: fallback;
+}
+@font-face {
+    font-family: 'iransans';
+    src: url(../fonts/fa-Iran-sans-web-bold.woff2);
+    font-weight: bold;
+    font-display: fallback;
+}
