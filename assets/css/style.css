@@ -279,8 +279,8 @@ body{
 
 service-item{
     display: flex;
-    width: 29% ;
-    max-width: 321px;
+    width: 27% ;
+    max-width: 22vw;
     margin: 16px;
 }
 
