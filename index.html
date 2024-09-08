@@ -130,7 +130,12 @@
             <p class="desc-textBox-intro-snapp">
                 از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر، رزرو هتل و... را میتوانید با اسنپ انجام دهید.
             </p>
-            <form onsubmit="event.preventDefault()" action="send-dl-link" class="form-textBox-intro-snapp">
+
+            <div class="dlApp-btn-intro-snapp dn">
+                <button>دانلود اپلیکیشن اسنپ</button>
+            </div>
+
+            <form onsubmit="event.preventDefault()" action="send-dl-link" class="form-textBox-intro-snapp dn-md">
                 <div class="inputBox-form-textBox-intro-snapp">
                     <input type="text" id="phoneNum_input" placeholder="09xxxxx6789">
                     <span id="input_icon">
@@ -142,7 +147,51 @@
                 <button type="submit">ارسال لینک</button>
             </form>
 
-            <a href="#" class="loginBtn-textBox-intro-snapp">ورود به وب اپلیکیشن اسنپ</a>
+            <a href="#" class="loginBtn-textBox-intro-snapp dn-md">ورود به وب اپلیکیشن اسنپ</a>
+
+            <div class="dlLinks-container-intro-snapp dn">
+                <div class="shadowOverlay-dlLinks-intro-snapp" ></div>
+
+                <div class="dlLinks-box-intro-snapp">
+                    <div class="dlLinks-box-wrapper-intro-snapp">
+                        <div class="title-dlLinks-intro-snapp">
+                            <h2>اپلیکیشن اسنپ</h2>
+                            <i ><svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#000000"><path d="M0 0h24v24H0z" fill="none"></path><path d="M14.59 8L12 10.59 9.41 8 8 9.41 10.59 12 8 14.59 9.41 16 12 13.41 14.59 16 16 14.59 13.41 12 16 9.41 14.59 8zM12 2C6.47 2 2 6.47 2 12s4.47 10 10 10 10-4.47 10-10S17.53 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z"></path></svg></i>
+                        </div>
+
+                        <div class="item-dlLinks-intro-snapp">
+                            <a href="">
+                                <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/directdownload-icon.png" width="24" height="24" alt="">
+                                <span>دانلود مستقیم</span>
+                            </a>
+                        </div>
+                        <div class="item-dlLinks-intro-snapp">
+                            <a href="">
+                                <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/cafebazaar.png" width="24" height="24" alt="">
+                                <span>دانلود از کافه‌بازار</span>
+                            </a>
+                        </div>
+                        <div class="item-dlLinks-intro-snapp">
+                            <a href="">
+                                <img src="https://web-cdn.snapp.ir/snappir-marketing/app/myketmarketicon.png" width="24" height="24" alt="">
+                                <span>دانلود از مایکت</span>
+                            </a>
+                        </div>
+                        <div class="item-dlLinks-intro-snapp">
+                            <a href="">
+                                <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/snapp-pwa.svg" width="24" height="24" alt="">
+                                <span>وب اپلیکیشن اسنپ  <span style="direction: ltr;">( iOS)</span></span>
+                            </a>
+                        </div>
+                        <div class="item-dlLinks-intro-snapp">
+                            <a href="">
+                                <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/apple.png" width="24" height="24" alt="">
+                                <span>دانلود از اپ استور</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="imgBox-intro-snapp dn-md">
             <figure class="wrapper-imgBox-intro-snapp">
@@ -151,7 +200,7 @@
         </div>
     </section>
 
-    <section class="downloadApp-snapp">
+    <section class="downloadApp-snapp dn-md">
         <a href="" class="link-downloadApp-snapp">
             <img src="./assets/image/direct-download-badge.png" alt="">
         </a>

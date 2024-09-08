@@ -96,7 +96,7 @@ benefitsItemList.forEach(item => {
             `
     )
 })
-window.addEventListener('resize' , () => {
+
     if(window.innerWidth <= 800){
         let submenuWrappers = document.querySelectorAll('#submenuWrapper')
         submenuWrappers.forEach(wrapper => {
@@ -110,11 +110,20 @@ window.addEventListener('resize' , () => {
     
         headerMenuBtn.addEventListener('click' , () => {
             if(headerMenu.classList.contains('open')){
-                headerMenu.classList.remove('open')
+                headerMenu.classList.remove('open');
+                document.body.style = 'overflow: auto;'
                 headerMenuBtnIcon.src = './assets/image/menu_black_24dp.svg'
             }else{
-                headerMenu.classList.add('open')
+                headerMenu.classList.add('open');
+                document.body.style = 'overflow: hidden;'
                 headerMenuBtnIcon.src = 'https://web-cdn.snapp.ir/snapp-website/icons/close_black_24dp.svg'
+            }
+        })
+        headerMenu.addEventListener('click' , e => {
+            if(e.target.classList.contains('menu-header-snapp')){
+                headerMenu.classList.remove('open');
+                document.body.style = 'overflow: auto;'
+                headerMenuBtnIcon.src = './assets/image/menu_black_24dp.svg'
             }
         })
     }else{
@@ -123,7 +132,7 @@ window.addEventListener('resize' , () => {
             wrapper.classList.add('hover')
         })
     }
-})
+
 
 
 function ctrlSubmenu(wrapper) {
@@ -142,6 +151,26 @@ function ctrlSubmenu(wrapper) {
     }
 }
 
+
+let dlLinksContainer = document.querySelector('.dlLinks-container-intro-snapp')
+let showDlAppBoxBtn = document.querySelector('.dlApp-btn-intro-snapp')
+// let headerMenuBtnIcon = headerMenuBtn.querySelector('img')
+
+showDlAppBoxBtn.addEventListener('click' , () => {
+    if(!dlLinksContainer.classList.contains('open')){
+        dlLinksContainer.classList.add('open');
+        document.body.style = 'overflow: hidden;'
+    }
+})
+
+
+const closeDlLinksContainer = () => {
+        dlLinksContainer.classList.remove('open');
+        document.body.style = 'overflow: auto;'
+}
+
+document.querySelector('.shadowOverlay-dlLinks-intro-snapp').addEventListener('click' , closeDlLinksContainer)
+document.querySelector('.title-dlLinks-intro-snapp i').addEventListener('click' , closeDlLinksContainer)
 
 
 window.customElements.define('service-item' , ServiceItems)

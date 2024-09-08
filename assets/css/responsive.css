@@ -164,6 +164,123 @@
         margin-right: 16px;
         font-size: 17px;
     }
+
+
+    .textBox-intro-snapp{
+        padding: 16px 24px !important;
+    }
+    .title-textBox-intro-snapp{
+        font-size: 24px !important;
+        margin-bottom: 0 !important;
+        line-height: 48px !important;
+    }
+    .desc-textBox-intro-snapp{
+        font-size: 17px !important; 
+    }
+
+    .dlApp-btn-intro-snapp{
+        display: flex !important;
+        padding: 8px 0;
+        align-items: center;
+        
+    }
+    .dlApp-btn-intro-snapp button{
+        font-family: 'iransans', sans-serif;
+        width: 100%;
+        height: 48px;
+        min-height: 48px;
+        font-size: 14px;
+        padding: 8px;
+        line-height: 1;
+        font-weight: 700;
+        color: rgb(64, 64, 64);
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 6px;
+        background-color: rgb(255, 255, 255);
+    }
+
+    .dlLinks-container-intro-snapp{
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex !important;
+        z-index: 60;
+        position: fixed;
+        align-items: flex-end;
+        justify-content: center;
+        visibility: hidden;
+    }
+
+    .dlLinks-container-intro-snapp.open{
+        visibility: visible;
+    }
+
+    .shadowOverlay-dlLinks-intro-snapp{
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        z-index: -1;
+        position: fixed;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+
+    .dlLinks-box-intro-snapp{
+        color: rgb(64, 64, 64) !important;
+        background: rgb(255, 255, 255) !important;
+        border-color: rgb(230, 230, 230) !important;
+        transform: translateY(100%);
+        width: 100%;
+        height: fit-content;
+        opacity: 1;
+        max-height: 100%;
+        overflow-y: auto;
+        transition: 250ms;
+    }
+
+    .dlLinks-container-intro-snapp.open .dlLinks-box-intro-snapp{
+        transform: translateY(0px);
+    }
+
+    .dlLinks-box-wrapper-intro-snapp{
+        padding: 0 16px;
+    }
+
+    .title-dlLinks-intro-snapp{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .title-dlLinks-intro-snapp h2{
+        margin: 16px 0;
+        font-weight: 700;
+    }
+
+    .title-dlLinks-intro-snapp i{
+        display: flex;
+        align-items: center;
+    }
+
+    .item-dlLinks-intro-snapp{
+        border-bottom: 1px solid #e8e8e8;
+        padding-top: 16px;
+    }
+
+    .item-dlLinks-intro-snapp a{
+        display: flex;
+        margin-bottom: 16px;
+        width: 100%;
+        align-items: center;
+    }
+
+    .item-dlLinks-intro-snapp a > span{
+        margin-right: 16px;
+        color: #3f3f3f;
+        font-size: 14px;
+    }
 }
 
 

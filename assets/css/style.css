@@ -135,7 +135,7 @@ body{
     flex-direction: column;
     justify-content: space-around;
     padding: 32px;
-    padding-right: max(140px,15%)!important;
+    padding-right: max(140px,15%);
     line-height: 1.7;
     text-align: right;
 }
