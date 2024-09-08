@@ -1,5 +1,5 @@
 @import url(./css-reset.css);
-
+@import url(./responsive.css);
 @import url(./slider-style.css);
 
 
@@ -75,16 +75,18 @@ body{
     color: #3f3f3f;
     line-height: 1.7;
     text-decoration: none;
+    display: flex;
+    align-items: center;
 }
 
-.item-menu-header-snapp > svg{
+.item-menu-header-snapp  svg{
     transform: scale(0.6) rotate(90deg);
     color: #575757;
     margin-right: 8px;
     height: 33px;
 }
 
-.item-menu-header-snapp:hover .submenu-header-snapp{
+.item-menu-header-snapp.hover:hover .submenu-header-snapp{
     height: auto;
     opacity: 1;
     transition: all 0.3s;

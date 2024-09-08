@@ -79,11 +79,11 @@ serviceItemList.forEach(item => {
 const containerFeatureAbout = document.querySelector('.feature-wrapper-about-snapp')
 
 featureItemAboutList.forEach(item => {
-    containerFeatureAbout.insertAdjacentHTML('beforeend' , 
-        `
-                <feature-item-about title="${item.title}" desc="${item.desc}" imgSrc="${item.imgSrc}"></feature-item-about>
-            `
-    )
+    // containerFeatureAbout.insertAdjacentHTML('beforeend' , 
+    //     `
+    //             <feature-item-about title="${item.title}" desc="${item.desc}" imgSrc="${item.imgSrc}"></feature-item-about>
+    //         `
+    // )
 })
 
 
@@ -96,6 +96,53 @@ benefitsItemList.forEach(item => {
             `
     )
 })
+window.addEventListener('resize' , () => {
+    if(window.innerWidth <= 800){
+        let submenuWrappers = document.querySelectorAll('#submenuWrapper')
+        submenuWrappers.forEach(wrapper => {
+            wrapper.classList.remove('hover')
+            wrapper.addEventListener('click' , () => ctrlSubmenu(wrapper))
+        })
+        
+        let headerMenu = document.querySelector('.menu-header-snapp')
+        let headerMenuBtn = document.querySelector('.menuIcon-header-snapp')
+        let headerMenuBtnIcon = headerMenuBtn.querySelector('img')
+    
+        headerMenuBtn.addEventListener('click' , () => {
+            if(headerMenu.classList.contains('open')){
+                headerMenu.classList.remove('open')
+                headerMenuBtnIcon.src = './assets/image/menu_black_24dp.svg'
+            }else{
+                headerMenu.classList.add('open')
+                headerMenuBtnIcon.src = 'https://web-cdn.snapp.ir/snapp-website/icons/close_black_24dp.svg'
+            }
+        })
+    }else{
+        let submenuWrappers = document.querySelectorAll('#submenuWrapper')
+        submenuWrappers.forEach(wrapper => {
+            wrapper.classList.add('hover')
+        })
+    }
+})
+
+
+function ctrlSubmenu(wrapper) {
+    let arrowIcon = wrapper.querySelector('svg')
+    let submenuElem = wrapper.querySelector('.submenu-header-snapp')
+    let wrapperItemSubmenu = submenuElem.querySelector('.wrapper-item-submenu-header-snapp')
+    
+    if(submenuElem.classList.contains('show')){
+        wrapperItemSubmenu.classList.remove("show")
+        setTimeout(()=> submenuElem.classList.remove("show"), 250)
+        arrowIcon.style = 'transform: scale(1) rotate(90deg) !important;'
+    }else{
+        arrowIcon.style = 'transform: scale(1) rotate(270deg) !important;'
+        submenuElem.classList.add("show")
+        wrapperItemSubmenu.classList.add("show")
+    }
+}
+
+
 
 window.customElements.define('service-item' , ServiceItems)
 window.customElements.define('feature-item-about' , FeatureItemAbout)

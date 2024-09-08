@@ -14,8 +14,15 @@
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
+
+
     
     <header class="header-snapp">
+
+        <div class="menuIcon-header-snapp dn">
+            <img src="./assets/image/menu_black_24dp.svg" loading="eager" alt="">
+        </div>
+
         <a href="./" class="logo-header-snapp">
             <svg xmlns="http://www.w3.org/2000/svg" width="90" height="32" viewBox="0 0 90 26">
                 <g fill="none" fill-rule="evenodd">
@@ -30,33 +37,87 @@
 
         <nav class="menu-header-snapp">
             <ul class="wrapper-menu-header-snapp">
-                <li class="item-menu-header-snapp"> <a href=""> سوپراپ اسنپ </a>
-                    <svg width="24" height="24" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 11-1.414-1.414L15.586 12 8.293 4.707z" fill="currentColor" fill-rule="nonzero"></path></g></svg>
+                <li class="item-menu-header-snapp hover" id="submenuWrapper" > 
+                    <a class=" fwb" href="javascript:void(0)" >
+                        <span class="pr8">  سوپراپ اسنپ </span>
+                        <svg width="24" class=" " height="24" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 11-1.414-1.414L15.586 12 8.293 4.707z" fill="currentColor" fill-rule="nonzero"></path></g></svg>
+
+                    </a>
                     <ul class="submenu-header-snapp">
-                        <li class="item-submenu-header-snapp"> <a href="">درخواست تاکسی  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">پیک موتوری  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">سفارش آنلاین غذا  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">سوپرمارکت  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">رزرو بلیط هواپیما  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">رزرو بلیط قطار  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">رزرو بلیط اتوبوس  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">رزرو هتل  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">درخواست وانت بار  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">خدمات اسباب‌کشی  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">پزشک و مشاور  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">اسنپ پرو  </a></li>
+                        <div class="wrapper-item-submenu-header-snapp">
+                            <li class="item-submenu-header-snapp"> <a href="">درخواست تاکسی  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">پیک موتوری  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">سفارش آنلاین غذا  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">سوپرمارکت  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">رزرو بلیط هواپیما  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">رزرو بلیط قطار  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">رزرو بلیط اتوبوس  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">رزرو هتل  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">درخواست وانت بار  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">خدمات اسباب‌کشی  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">پزشک و مشاور  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">اسنپ پرو  </a></li>
+                        </div>
                     </ul>
                 </li>
-                <li class="item-menu-header-snapp"> <a href=""> ثبت نام راننده اسنپ   </a></li>
-                <li class="item-menu-header-snapp"> <a href=""> باشگاه رانندگان   </a></li>
-                <li class="item-menu-header-snapp"> <a href=""> پنل سازمانی   </a></li>
-                <li class="item-menu-header-snapp"> <a href=""> بلاگ   </a></li>
-                <li class="item-menu-header-snapp"> <a href=""> درباره اسنپ  </a> 
-                    <svg width="24" height="24" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 11-1.414-1.414L15.586 12 8.293 4.707z" fill="currentColor" fill-rule="nonzero"></path></g></svg>
+                <li class="item-menu-header-snapp"> <a class="fs16 jcs" href=""> ثبت نام راننده اسنپ   <span class="moreMessage-item-menu-header-snapp dn pr8 fs14 main-green-text-color "> (سواری، موتور و وانت) </span></a></li>
+                <li class="item-menu-header-snapp"> <a class="fs16" href=""> باشگاه رانندگان   </a></li>
+                <li class="item-menu-header-snapp"> <a class="fs16" href=""> پنل سازمانی   </a></li>
+                <li class="item-menu-header-snapp"> <a class="fs16" href=""> بلاگ   </a></li>
+                <li class="item-menu-header-snapp hover" id="submenuWrapper"> 
+                    <a class=" fwb" href="javascript:void(0)">
+                        <span class="pr8"> درباره اسنپ  
+                        </span>
+                        <svg width="24" class=" " height="24" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 11-1.414-1.414L15.586 12 8.293 4.707z" fill="currentColor" fill-rule="nonzero"></path></g></svg>
+
+                     </a> 
                     <ul class="submenu-header-snapp">
-                        <li class="item-submenu-header-snapp"> <a href="">فرصت‌های شغلی  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">درباره ما  </a></li>
-                        <li class="item-submenu-header-snapp"> <a href="">تماس با ما  </a></li>
+                        <div class="wrapper-item-submenu-header-snapp">
+                            <li class="item-submenu-header-snapp"> <a href="">فرصت‌های شغلی  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">درباره ما  </a></li>
+                            <li class="item-submenu-header-snapp"> <a href="">تماس با ما  </a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="item-menu-header-snapp  dlApp-menu-header-snapp dn" id="submenuWrapper"> 
+                    <a class="fwb main-green-text-color" href="javascript:void(0)">
+                    <span class="pr8">اپلیکیشن اسنپ
+                    </span>
+                    <svg width="24" class="main-green-text-color " height="24" viewBox="0 0 24 20" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><path d="M0 0h24v24H0z"></path><path d="M8.293 4.707a1 1 0 011.414-1.414l8 8a1 1 0 010 1.414l-8 8a1 1 0 11-1.414-1.414L15.586 12 8.293 4.707z" fill="currentColor" fill-rule="nonzero"></path></g></svg>
+                </a> 
+                    <ul class="submenu-header-snapp">
+                        <div class="wrapper-item-submenu-header-snapp">
+                            <li class="item-submenu-header-snapp">
+                                <a href="">
+                                    <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/directdownload-icon.png" alt="">
+                                    <span>دانلود مستقیم</span>
+                                </a>
+                            </li>
+                            <li class="item-submenu-header-snapp">
+                                <a href="">
+                                    <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/cafebazaar.png" alt="">
+                                    <span>دانلود از کافه‌بازار</span>
+                                </a>
+                            </li>
+                            <li class="item-submenu-header-snapp">
+                                <a href="">
+                                    <img src="https://web-cdn.snapp.ir/snappir-marketing/app/myketmarketicon.png" alt="">
+                                    <span>دانلود از مایکت</span>
+                                </a>
+                            </li>
+                            <li class="item-submenu-header-snapp">
+                                <a href="">
+                                    <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/snapp-pwa.svg" width="24" height="24" alt="">
+                                    <span>وب اپلیکیشن اسنپ  <span style="direction: ltr;">( iOS)</span></span>
+                                </a>
+                            </li>
+                            <li class="item-submenu-header-snapp">
+                                <a href="">
+                                    <img src="https://web-cdn.snapp.ir/snapp-website/icons/markets/apple.png" alt="">
+                                    <span>دانلود از اپ استور</span>
+                                </a>
+                            </li>
+                        </div>
                     </ul>
                 </li>
             </ul>
@@ -64,7 +125,7 @@
     </header>
 
     <section class="intro-snapp">
-        <div class="textBox-intro-snapp">
+        <div class="textBox-intro-snapp w100-md">
             <h1 class="title-textBox-intro-snapp">تجربه‌ی زندگی راحت‌تر، سریع‌تر و به‌صرفه‌تر با سوپراپلیکیشن اسنپ!</h1>
             <p class="desc-textBox-intro-snapp">
                 از درخواست خودرو گرفته تا سفارش غذا، خرید سوپرمارکتی، خرید بلیط سفر، رزرو هتل و... را میتوانید با اسنپ انجام دهید.
@@ -83,7 +144,7 @@
 
             <a href="#" class="loginBtn-textBox-intro-snapp">ورود به وب اپلیکیشن اسنپ</a>
         </div>
-        <div class="imgBox-intro-snapp">
+        <div class="imgBox-intro-snapp dn-md">
             <figure class="wrapper-imgBox-intro-snapp">
                 <img src="./assets/image/intro_desktop.jpg" alt="">
             </figure>
@@ -141,11 +202,11 @@
                 اسنپ، اولین تاکسی اینترنتی ایران، بعد از پنج سال فعالیت در حوزه‌ی تردد شهری، به یک سوپر‌اپ با خدمات متنوع تبدیل شد. سوپراپ اسنپ راه‌حلی جدید و ساده است که با استفاده از آن تنها با یک اپلیکیشن می‌توانید علاوه بر درخواست خودرو، موتور و وانت از خدمات متعددی از جمله سفارش غذا، پزشک و مشاور آنلاین، خرید از سوپرمارکت‌ها و فروشگاه‌ها، اسباب‌کشی، خرید بلیط (هواپیما، اتوبوس، قطار)، رزرو هتل، پرداخت قبض و خرید شارژ استفاده کنید.
             </p>
         </div>
+<!-- 
+        <!-- <div class="feature-wrapper-about-snapp">
 
-        <div class="feature-wrapper-about-snapp">
 
-
-        </div>
+        </div> --> -->
     </section>
 
     <section class="registr-driver-snapp">
