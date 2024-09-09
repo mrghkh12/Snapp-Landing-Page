@@ -1,5 +1,5 @@
 # Snapp Landing Page
-This website cloneed from <a href="https://https://snapp.ir/" target="_blank">snapp</a>. that a practicalproject to master the front-end introductory topic
+This website cloneed from <a href="https://snapp.ir/" target="_blank">snapp</a>. that a practical project to master the front-end introductory topic
 ## Technologies used:
 Vanilla js <br>
 keen slider <br>
