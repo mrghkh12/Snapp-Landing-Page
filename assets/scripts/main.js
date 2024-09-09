@@ -97,6 +97,82 @@ benefitsItemList.forEach(item => {
     )
 })
 
+    if(window.innerWidth <= 800){
+        let submenuWrappers = document.querySelectorAll('#submenuWrapper')
+        submenuWrappers.forEach(wrapper => {
+            wrapper.classList.remove('hover')
+            wrapper.addEventListener('click' , () => ctrlSubmenu(wrapper))
+        })
+        
+        let headerMenu = document.querySelector('.menu-header-snapp')
+        let headerMenuBtn = document.querySelector('.menuIcon-header-snapp')
+        let headerMenuBtnIcon = headerMenuBtn.querySelector('img')
+    
+        headerMenuBtn.addEventListener('click' , () => {
+            if(headerMenu.classList.contains('open')){
+                headerMenu.classList.remove('open');
+                document.body.style = 'overflow: auto;'
+                headerMenuBtnIcon.src = './assets/image/menu_black_24dp.svg'
+            }else{
+                headerMenu.classList.add('open');
+                document.body.style = 'overflow: hidden;'
+                headerMenuBtnIcon.src = 'https://web-cdn.snapp.ir/snapp-website/icons/close_black_24dp.svg'
+            }
+        })
+        headerMenu.addEventListener('click' , e => {
+            if(e.target.classList.contains('menu-header-snapp')){
+                headerMenu.classList.remove('open');
+                document.body.style = 'overflow: auto;'
+                headerMenuBtnIcon.src = './assets/image/menu_black_24dp.svg'
+            }
+        })
+    }else{
+        let submenuWrappers = document.querySelectorAll('#submenuWrapper')
+        submenuWrappers.forEach(wrapper => {
+            wrapper.classList.add('hover')
+        })
+    }
+
+
+
+function ctrlSubmenu(wrapper) {
+    let arrowIcon = wrapper.querySelector('svg')
+    let submenuElem = wrapper.querySelector('.submenu-header-snapp')
+    let wrapperItemSubmenu = submenuElem.querySelector('.wrapper-item-submenu-header-snapp')
+    
+    if(submenuElem.classList.contains('show')){
+        wrapperItemSubmenu.classList.remove("show")
+        setTimeout(()=> submenuElem.classList.remove("show"), 250)
+        arrowIcon.style = 'transform: scale(1) rotate(90deg) !important;'
+    }else{
+        arrowIcon.style = 'transform: scale(1) rotate(270deg) !important;'
+        submenuElem.classList.add("show")
+        wrapperItemSubmenu.classList.add("show")
+    }
+}
+
+
+let dlLinksContainer = document.querySelector('.dlLinks-container-intro-snapp')
+let showDlAppBoxBtn = document.querySelector('.dlApp-btn-intro-snapp')
+// let headerMenuBtnIcon = headerMenuBtn.querySelector('img')
+
+showDlAppBoxBtn.addEventListener('click' , () => {
+    if(!dlLinksContainer.classList.contains('open')){
+        dlLinksContainer.classList.add('open');
+        document.body.style = 'overflow: hidden;'
+    }
+})
+
+
+const closeDlLinksContainer = () => {
+        dlLinksContainer.classList.remove('open');
+        document.body.style = 'overflow: auto;'
+}
+
+document.querySelector('.shadowOverlay-dlLinks-intro-snapp').addEventListener('click' , closeDlLinksContainer)
+document.querySelector('.title-dlLinks-intro-snapp i').addEventListener('click' , closeDlLinksContainer)
+
+
 window.customElements.define('service-item' , ServiceItems)
 window.customElements.define('feature-item-about' , FeatureItemAbout)
 window.customElements.define('benefits-item' , BenefitsItem)

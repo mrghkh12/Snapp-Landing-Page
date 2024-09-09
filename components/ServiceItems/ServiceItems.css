@@ -40,3 +40,30 @@
     color: #a3a3a3;
     line-height: 1.7;
 }
+
+
+@media screen and (max-width: 800px) {
+    .item-feature-snapp{
+        flex-direction: column;
+        padding: 8px !important;
+    }
+    
+    .item-feature-snapp > img{
+        width: 48px;
+        height: 48px;
+        margin: 0 4px;
+    }
+    .desc-item-features-snapp{
+        padding: 0 !important;
+    }
+
+    .desc-item-features-snapp h3{
+        font-size: 14px;
+        margin: 0 !important;
+        text-align: center;
+    }
+
+    .desc-item-features-snapp p{
+        display: none !important;
+    }
+}
