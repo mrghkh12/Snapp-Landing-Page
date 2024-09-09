@@ -345,6 +345,27 @@
         margin: 0 !important;
         margin-top: 24px !important;
     }
+
+
+
+    .registr-driver-snapp{
+        padding: 40px 16px !important;
+    }
+    .videoBox-registr-driver-snapp{
+        margin: 24px 0 !important;
+    }
+
+    .container-benefits-item{
+        justify-content: center !important;
+    }
+
+    benefits-item {
+        width: 100% !important;
+        height: 260px !important;
+        margin-top: 24px !important;
+        padding: 24px !important;
+        justify-content: center;
+    }
 }
 
 

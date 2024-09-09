@@ -14,7 +14,7 @@
     justify-content: center;
 }
 
-.details-benefits-item h3{
+.details-benefits-item h3:first-child{
     text-align: right;
     font-weight: 700;
     padding: 8px 0;
@@ -24,4 +24,18 @@
     text-align: right;
     font-size: 14px;
     font-weight: 500;
+}
+
+
+@media screen and (max-width: 800px){
+    .benefits-item{
+        flex-direction: column;
+        justify-content: center !important;
+    }
+    .details-benefits-item{
+        padding-right: 0 !important;
+    }
+    .benefits-item img{
+        width: 80px !important;
+    }
 }
