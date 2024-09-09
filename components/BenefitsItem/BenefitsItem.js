@@ -9,6 +9,8 @@ template.innerHTML =         `
                 <img src="" alt="" width="120">
                 <div class="details-benefits-item">
                     <h3><h3>
+
+                    
                     <p></p>
                 </div>
             </div> 
