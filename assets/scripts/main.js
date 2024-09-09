@@ -79,11 +79,11 @@ serviceItemList.forEach(item => {
 const containerFeatureAbout = document.querySelector('.feature-wrapper-about-snapp')
 
 featureItemAboutList.forEach(item => {
-    // containerFeatureAbout.insertAdjacentHTML('beforeend' , 
-    //     `
-    //             <feature-item-about title="${item.title}" desc="${item.desc}" imgSrc="${item.imgSrc}"></feature-item-about>
-    //         `
-    // )
+    containerFeatureAbout.insertAdjacentHTML('beforeend' , 
+        `
+                <feature-item-about title="${item.title}" desc="${item.desc}" imgSrc="${item.imgSrc}"></feature-item-about>
+            `
+    )
 })
 
 

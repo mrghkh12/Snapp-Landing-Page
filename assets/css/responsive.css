@@ -303,6 +303,58 @@
     .slide-item {
         height: auto !important;
     }
+
+
+
+
+    .about-snapp{
+        flex-direction: column;
+        min-height: auto !important;
+        margin-bottom: 0 !important;
+        padding-bottom: 0 !important;
+    }
+
+    .imgBox-about-snapp{
+        height: 30vh !important;
+        min-height: 30vh !important;
+        width:100% !important;
+        max-width: 100% !important;
+    }
+
+    .textBox-about-snapp{
+        text-align: right;
+        display: flex;
+        width:100% !important;
+        max-width: 100% !important;
+        padding: 0 16px !important;
+        flex-direction: column;
+        height: auto !important;
+        min-height: auto !important;
+    }
+
+    .feature-wrapper-about-snapp{
+        position: relative !important;
+        padding: 8px 16px !important;
+        flex-wrap: wrap;
+        justify-content: space-around !important;
+    }
+
+    feature-item-about{
+        width: 41% !important;
+        max-width: 41% !important;
+        margin: 0 !important;
+        margin-top: 24px !important;
+    }
 }
 
 
+
+
+
+
+@media screen and (max-width: 600px){
+    feature-item-about{
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+}
